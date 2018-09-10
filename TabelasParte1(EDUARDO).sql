@@ -1,0 +1,14 @@
+CREATE TABLE Usuario(
+    ID int IDENTITY PRIMARY KEY NOT NULL,
+    Login varchar (222) unique NOT NULL,
+    senha varchar(300) NOT NULL,
+    DtExpiracao DATETIME NOT NULL default('1900/01/01')
+     
+);
+ CREATE TABLE Cordenador(
+     ID int IDENTITY PRIMARY KEY NOT NULL,
+	 NOME VARCHAR(200) NOT NULL,
+	 EMAIL VARCHAR(300) UNIQUE NOT NULL,
+	 CELULAR VARCHAR(80) UNIQUE NOT NULL,
+
+);	  
